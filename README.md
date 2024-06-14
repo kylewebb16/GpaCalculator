@@ -1,18 +1,12 @@
-## Getting Started
+# Program function
+The GradeCheck program takes user inputted grades, and returns a calculated GPA along with the corresponding letter grade.
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+# Instructions
+1. Run the program GradeCheck
+2. When prompted, enter valid grades as an integer (no decimals), the program will reprompt you and discard your input if it is not valid
+3. To quit at any time, enter "999" as input and the program will calculate GPA and letter grades based on the grades you have input so far. If no grades entered program will terminate.
 
-## Folder Structure
+# Design choices
+ArrayList vs Array: I originally used an array to store values for faster execution, but with a maximum of 10 grades, utility benefits of an arraylist outweighed the negligable speed benefits of an array. If this program was to be scaled up an array of user defined size may be a better approach.
 
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Use of temp: to validate user input, I used an int temp variable. This choice was made to ensure only validated input entered the Arraylist, which was important for average calculation at little cost to readability, memory, or speed.
