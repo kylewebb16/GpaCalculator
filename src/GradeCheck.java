@@ -18,7 +18,7 @@ public class GradeCheck {
         // Part 1: Accept up to 10 grades from the user, check for valid inputs
         primaryLoop:
         for (int gradesCount = 0; gradesCount < 10; gradesCount++) {
-            // Initialize validInput to false
+            // Initialize validInput to false, this will keep the while loop below checking input until input is validated and set to true
             boolean validInput = false;
             // Check for valid inputs, reprompt until valid input or quit statement "999" is entered providing instructions as needed
             while (!validInput) {
