@@ -1,3 +1,6 @@
+# Important!
+GradeCheck.java has a required dependency RangeException.java please make sure these are located in the same directory for proper function.
+
 # Program function
 The GradeCheck program takes user inputted grades, and returns a calculated GPA along with the corresponding letter grade.
 
